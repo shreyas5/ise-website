@@ -1,0 +1,15 @@
+markdown: kramdown
+permalink: pretty
+
+title: Information Science
+
+college: PES College of Engineering
+department: Information Science and Engineering
+place: Mandya
+
+collections:
+  sem:
+    output: true
+
+  sub:
+    output: true

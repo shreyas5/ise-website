@@ -1,0 +1,19 @@
+---
+layout: sub
+---
+{% assign subpage = site.sem | where: 'title', 'Semester 5' %}
+{% for item in subpage %}
+  <h2 class="text-center">{{ item.sub4 }}</h2>
+{% endfor %}
+
+<div class="row justify-content-center my-3">
+  <div class="col-md-6">
+    <div class="list-group">
+      {% for file in site.static_files %}
+        {% if file.path contains 'assets/sem5/sub4' %}
+          {% include file-link.html %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
